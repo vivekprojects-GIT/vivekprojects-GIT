@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sai Vivek Katkuri</h1>
-<h3 align="center">AI Engineer | Generative AI | LLMs | RAG | Agentic AI | GCP | MLOps</h3>
+<h3 align="center">AI Engineer | Generative AI | LLMs | RAG | Agentic AI | AWS | MLOps</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=vivekprojects-GIT&label=Profile%20views&color=ff69b4&style=flat" alt="profile-views" />
