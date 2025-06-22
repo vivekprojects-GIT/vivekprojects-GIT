@@ -13,7 +13,7 @@
 
 ## 🧠 About Me
 
-I’m a passionate **AI Engineer** with over 5 years of experience building production-ready applications using **Generative AI**, **LLMs**, **RAG**, and **multi-agent architectures**.
+I’m a passionate **AI Engineer** with over 5 years of experience building production-ready applications using **Generative AI**, **LLMs**, **RAG**, **multi-agent architectures**, **Machine Learning**, **Deep Learning**, **Computer Vision** and **Natural Language Proccessing.**
 
 My expertise lies in:
 - 🧠 Architecting AI systems that retrieve, reason, and generate
