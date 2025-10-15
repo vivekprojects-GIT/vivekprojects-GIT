@@ -4,7 +4,7 @@ A comprehensive portfolio showcasing expertise in Generative AI, LLM Fine-Tuning
 
 ## 🚀 Live Portfolio
 
-Visit the live portfolio: [https://vivekprojects-git.github.io/portfolio](https://vivekprojects-git.github.io/portfolio)
+Visit the live portfolio: [https://vivekprojects-git.github.io/vivekprojects-GIT](https://vivekprojects-git.github.io/vivekprojects-GIT)
 
 ## 📁 Portfolio Structure
 
