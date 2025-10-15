@@ -1,0 +1,28 @@
+# GitHub Pages Configuration
+title: "Sai Vivek - Generative AI Engineer"
+description: "Portfolio showcasing expertise in Generative AI, LLM Fine-Tuning, RAG Systems, and Agentic Architecture Design"
+author: "Sai Vivek Katkuri"
+email: "katkurisaivivek95@gmail.com"
+github_username: "vivekprojects-GIT"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - demos/
+  - run_demos.sh
+  - .gitignore
+  - .DS_Store
+
+# Include files
+include:
+  - _redirects
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
