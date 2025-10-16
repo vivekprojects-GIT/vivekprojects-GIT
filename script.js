@@ -286,7 +286,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 function updateThemeIcon(theme) {
-    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    themeIcon.textContent = theme === 'dark' ? 'Light' : 'Dark';
 }
 
 // Particle System

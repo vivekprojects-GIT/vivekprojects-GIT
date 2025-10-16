@@ -1278,8 +1278,11 @@ section {
 }
 
 .theme-icon {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
     transition: transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .theme-toggle:hover .theme-icon {
@@ -1315,10 +1318,18 @@ section {
 
 .floating-icon {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     opacity: 0.1;
     animation: float 6s ease-in-out infinite;
     color: var(--primary-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 0.5rem;
+    min-width: 40px;
+    text-align: center;
 }
 
 .floating-icon:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
@@ -1424,9 +1435,13 @@ section {
 }
 
 .stat-icon {
-    font-size: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     display: block;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Enhanced Buttons */
@@ -1627,7 +1642,9 @@ section {
 /* Responsive Adjustments for Futuristic Elements */
 @media (max-width: 768px) {
     .floating-icon {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        padding: 0.3rem;
+        min-width: 35px;
     }
     
     .stat-card {
@@ -1637,6 +1654,10 @@ section {
     .theme-toggle {
         width: 35px;
         height: 35px;
+    }
+    
+    .theme-icon {
+        font-size: 0.7rem;
     }
     
     .scroll-indicator {
