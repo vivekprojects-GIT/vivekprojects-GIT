@@ -261,3 +261,302 @@ fadeInStyles.textContent = `
     }
 `;
 document.head.appendChild(fadeInStyles);
+
+// ========================================
+// FUTURISTIC ENHANCEMENTS
+// ========================================
+
+// Theme Toggle Functionality
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+const body = document.body;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+body.setAttribute('data-theme', currentTheme);
+updateThemeIcon(currentTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+// Particle System
+class ParticleSystem {
+    constructor() {
+        this.canvas = document.getElementById('particles-canvas');
+        this.ctx = this.canvas.getContext('2d');
+        this.particles = [];
+        this.mouse = { x: 0, y: 0 };
+        
+        this.init();
+        this.animate();
+        this.bindEvents();
+    }
+    
+    init() {
+        this.resize();
+        this.createParticles();
+    }
+    
+    resize() {
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+    }
+    
+    createParticles() {
+        const particleCount = Math.floor((this.canvas.width * this.canvas.height) / 10000);
+        this.particles = [];
+        
+        for (let i = 0; i < particleCount; i++) {
+            this.particles.push({
+                x: Math.random() * this.canvas.width,
+                y: Math.random() * this.canvas.height,
+                vx: (Math.random() - 0.5) * 0.5,
+                vy: (Math.random() - 0.5) * 0.5,
+                size: Math.random() * 2 + 1,
+                opacity: Math.random() * 0.5 + 0.2
+            });
+        }
+    }
+    
+    animate() {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.particles.forEach((particle, index) => {
+            particle.x += particle.vx;
+            particle.y += particle.vy;
+            
+            // Wrap around screen
+            if (particle.x < 0) particle.x = this.canvas.width;
+            if (particle.x > this.canvas.width) particle.x = 0;
+            if (particle.y < 0) particle.y = this.canvas.height;
+            if (particle.y > this.canvas.height) particle.y = 0;
+            
+            // Draw particle
+            this.ctx.beginPath();
+            this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+            this.ctx.fillStyle = `rgba(99, 102, 241, ${particle.opacity})`;
+            this.ctx.fill();
+            
+            // Draw connections
+            this.particles.slice(index + 1).forEach(otherParticle => {
+                const dx = particle.x - otherParticle.x;
+                const dy = particle.y - otherParticle.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < 100) {
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(particle.x, particle.y);
+                    this.ctx.lineTo(otherParticle.x, otherParticle.y);
+                    this.ctx.strokeStyle = `rgba(99, 102, 241, ${0.1 * (1 - distance / 100)})`;
+                    this.ctx.lineWidth = 0.5;
+                    this.ctx.stroke();
+                }
+            });
+        });
+        
+        requestAnimationFrame(() => this.animate());
+    }
+    
+    bindEvents() {
+        window.addEventListener('resize', () => {
+            this.resize();
+            this.createParticles();
+        });
+        
+        window.addEventListener('mousemove', (e) => {
+            this.mouse.x = e.clientX;
+            this.mouse.y = e.clientY;
+        });
+    }
+}
+
+// Counter Animation
+class CounterAnimation {
+    constructor() {
+        this.counters = document.querySelectorAll('.counter');
+        this.init();
+    }
+    
+    init() {
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    this.animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        this.counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+    }
+    
+    animateCounter(element) {
+        const target = parseFloat(element.getAttribute('data-target'));
+        const duration = 2000;
+        const start = performance.now();
+        
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - start;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            const current = progress * target;
+            element.textContent = target % 1 === 0 ? Math.floor(current) : current.toFixed(2);
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            }
+        };
+        
+        requestAnimationFrame(updateCounter);
+    }
+}
+
+// Typing Animation
+class TypingAnimation {
+    constructor() {
+        this.elements = document.querySelectorAll('.typing-animation');
+        this.init();
+    }
+    
+    init() {
+        this.elements.forEach(element => {
+            const text = element.getAttribute('data-text');
+            element.textContent = '';
+            this.typeText(element, text, 100);
+        });
+    }
+    
+    typeText(element, text, speed) {
+        let i = 0;
+        const timer = setInterval(() => {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+            } else {
+                clearInterval(timer);
+                // Remove cursor after typing is complete
+                setTimeout(() => {
+                    element.style.borderRight = 'none';
+                }, 1000);
+            }
+        }, speed);
+    }
+}
+
+// Glitch Effect
+class GlitchEffect {
+    constructor() {
+        this.elements = document.querySelectorAll('.glitch-text');
+        this.init();
+    }
+    
+    init() {
+        this.elements.forEach(element => {
+            setInterval(() => {
+                if (Math.random() < 0.1) {
+                    element.style.animation = 'none';
+                    setTimeout(() => {
+                        element.style.animation = '';
+                    }, 100);
+                }
+            }, 2000);
+        });
+    }
+}
+
+// Scroll Progress Indicator
+class ScrollProgress {
+    constructor() {
+        this.createProgressBar();
+        this.bindEvents();
+    }
+    
+    createProgressBar() {
+        const progressBar = document.createElement('div');
+        progressBar.className = 'scroll-progress';
+        progressBar.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            z-index: 9999;
+            transition: width 0.1s ease;
+        `;
+        document.body.appendChild(progressBar);
+    }
+    
+    bindEvents() {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            
+            const progressBar = document.querySelector('.scroll-progress');
+            progressBar.style.width = scrollPercent + '%';
+        });
+    }
+}
+
+// Initialize all futuristic features
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize particle system
+    new ParticleSystem();
+    
+    // Initialize counter animations
+    new CounterAnimation();
+    
+    // Initialize typing animation
+    new TypingAnimation();
+    
+    // Initialize glitch effect
+    new GlitchEffect();
+    
+    // Initialize scroll progress
+    new ScrollProgress();
+    
+    // Add smooth reveal animations to sections
+    const sections = document.querySelectorAll('section');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        revealObserver.observe(section);
+    });
+});
+
+// Enhanced navbar with glassmorphism
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(255, 255, 255, 0.1)';
+        navbar.style.backdropFilter = 'blur(10px)';
+        navbar.style.borderBottom = '1px solid rgba(255, 255, 255, 0.2)';
+    } else {
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.backdropFilter = 'none';
+        navbar.style.borderBottom = 'none';
+    }
+});

@@ -7,6 +7,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -39,6 +41,11 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -49,49 +56,86 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Particle Background -->
+        <div class="particles-container">
+            <canvas id="particles-canvas"></canvas>
+        </div>
+        
+        <!-- Floating Tech Icons -->
+        <div class="floating-icons">
+            <div class="floating-icon" data-icon="🤖">🤖</div>
+            <div class="floating-icon" data-icon="🧠">🧠</div>
+            <div class="floating-icon" data-icon="⚡">⚡</div>
+            <div class="floating-icon" data-icon="🔬">🔬</div>
+            <div class="floating-icon" data-icon="🚀">🚀</div>
+            <div class="floating-icon" data-icon="💻">💻</div>
+        </div>
+
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Building the Future with 
-                    <span class="gradient-text">Generative AI</span>
+                    <span class="typing-animation" data-text="Building the Future with">Building the Future with</span>
+                    <br>
+                    <span class="gradient-text glitch-text" data-text="Generative AI">Generative AI</span>
                 </h1>
-                <p class="hero-description">
+                <p class="hero-description fade-in-up">
                     Specialized in LLM Fine-Tuning, RAG Systems, and Agentic Architecture Design. 
                     I architect intelligent systems that solve real-world problems through advanced AI technologies.
                 </p>
                 <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">98%</span>
+                    <div class="stat stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">🎯</div>
+                        <span class="stat-number counter" data-target="98">0</span>
                         <span class="stat-label">Multi-Domain Accuracy</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">1.85x</span>
+                    <div class="stat stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">⚡</div>
+                        <span class="stat-number counter" data-target="1.85">0</span>
                         <span class="stat-label">MLX Performance Boost</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">6GB</span>
+                    <div class="stat stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">💾</div>
+                        <span class="stat-number counter" data-target="6">0</span>
                         <span class="stat-label">Memory Efficiency</span>
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary btn-glow">
+                        <span>View My Work</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-hover-effect">
+                        <span>Get In Touch</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="ai-visualization">
                     <div class="neural-network">
-                        <div class="node"></div>
-                        <div class="node"></div>
-                        <div class="node"></div>
-                        <div class="node"></div>
-                        <div class="node"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
-                        <div class="connection"></div>
+                        <div class="node pulse-node"></div>
+                        <div class="node pulse-node" style="animation-delay: 0.5s;"></div>
+                        <div class="node pulse-node" style="animation-delay: 1s;"></div>
+                        <div class="node pulse-node" style="animation-delay: 1.5s;"></div>
+                        <div class="node pulse-node" style="animation-delay: 2s;"></div>
+                        <div class="connection animated-connection"></div>
+                        <div class="connection animated-connection" style="animation-delay: 0.5s;"></div>
+                        <div class="connection animated-connection" style="animation-delay: 1s;"></div>
+                        <div class="connection animated-connection" style="animation-delay: 1.5s;"></div>
                     </div>
+                    <!-- Holographic Effect -->
+                    <div class="holographic-overlay"></div>
                 </div>
             </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p>Scroll to explore</p>
         </div>
     </section>
 
@@ -839,5 +883,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
