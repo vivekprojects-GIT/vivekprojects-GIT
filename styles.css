@@ -1649,7 +1649,7 @@ section {
 /* Hero Section - Compact Design */
 .hero {
     padding: 40px 0 40px;
-    background: var(--bg-primary);
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -2085,20 +2085,21 @@ section {
     gap: 2rem;
     margin: 2rem 0;
     padding: 1rem;
-    background: var(--bg-secondary);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .metric-item {
     text-align: center;
     padding: 1rem;
-    background: var(--bg-primary);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     min-width: 80px;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(226, 232, 240, 0.5);
 }
 
 .metric-item:hover {
