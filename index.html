@@ -93,83 +93,63 @@
         </div>
     </section>
 
-    <!-- Technical Pillars Section -->
-    <section id="technical-pillars" class="technical-pillars">
+    <!-- Technical Skills Section -->
+    <section id="technical-pillars" class="technical-skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Core Technical Expertise</h2>
-                <p class="section-subtitle">Three pillars of production-ready AI engineering</p>
+                <h2 class="section-title">Technical Skills Matrix</h2>
+                <p class="section-subtitle">Comprehensive expertise across AI engineering domains</p>
             </div>
             
-            <div class="pillars-grid">
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <div class="icon-agentic">🤖</div>
-                    </div>
-                    <h3>Agentic Systems</h3>
-                    <p class="pillar-subtitle">CrewAI / LangGraph</p>
-                    <p class="pillar-description">
-                        Multi-agent orchestration with task decomposition, state management, 
-                        and intelligent routing for complex AI workflows.
-                    </p>
-                    <div class="pillar-metrics">
-                        <div class="metric">
-                            <span class="metric-value">Multi-Agent</span>
-                            <span class="metric-label">Architecture</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">LangGraph</span>
-                            <span class="metric-label">Orchestration</span>
-                        </div>
-                    </div>
-                    <a href="#projects" class="pillar-link">View Agentic Projects →</a>
-                </div>
-
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <div class="icon-optimization">⚡</div>
-                    </div>
-                    <h3>LLM Optimization</h3>
-                    <p class="pillar-subtitle">QLoRA / Fine-Tuning</p>
-                    <p class="pillar-description">
-                        Advanced parameter-efficient fine-tuning with QLoRA, achieving 
-                        98% accuracy with 6GB memory usage across multiple domains.
-                    </p>
-                    <div class="pillar-metrics">
-                        <div class="metric">
-                            <span class="metric-value">98%</span>
-                            <span class="metric-label">Multi-Domain Accuracy</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">6GB</span>
-                            <span class="metric-label">Memory Efficiency</span>
-                        </div>
-                    </div>
-                    <a href="#projects" class="pillar-link">View Optimization Projects →</a>
-                </div>
-
-                <div class="pillar-card">
-                    <div class="pillar-icon">
-                        <div class="icon-mlops">🚀</div>
-                    </div>
-                    <h3>Production MLOps</h3>
-                    <p class="pillar-subtitle">FastAPI / Docker</p>
-                    <p class="pillar-description">
-                        End-to-end MLOps pipelines with FastAPI, Docker, Kubernetes, 
-                        and cloud deployment for scalable AI systems.
-                    </p>
-                    <div class="pillar-metrics">
-                        <div class="metric">
-                            <span class="metric-value">FastAPI</span>
-                            <span class="metric-label">Production Ready</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">Docker</span>
-                            <span class="metric-label">Containerization</span>
-                        </div>
-                    </div>
-                    <a href="#projects" class="pillar-link">View MLOps Projects →</a>
-                </div>
+            <div class="skills-table-container">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Technologies</th>
+                            <th>Proficiency</th>
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="category-cell">Agentic AI</td>
+                            <td class="tech-cell">LangGraph, CrewAI, Multi-Agent Orchestration</td>
+                            <td class="proficiency-cell expert">Expert</td>
+                            <td class="experience-cell">Production Systems</td>
+                        </tr>
+                        <tr>
+                            <td class="category-cell">LLM Optimization</td>
+                            <td class="tech-cell">QLoRA, LoRA, PEFT, Fine-Tuning</td>
+                            <td class="proficiency-cell expert">Expert</td>
+                            <td class="experience-cell">98% Accuracy</td>
+                        </tr>
+                        <tr>
+                            <td class="category-cell">Vector Search</td>
+                            <td class="tech-cell">Pinecone, ChromaDB, FAISS, RAG</td>
+                            <td class="proficiency-cell advanced">Advanced</td>
+                            <td class="experience-cell">Semantic Routing</td>
+                        </tr>
+                        <tr>
+                            <td class="category-cell">MLOps</td>
+                            <td class="tech-cell">FastAPI, Docker, Kubernetes, MLflow</td>
+                            <td class="proficiency-cell expert">Expert</td>
+                            <td class="experience-cell">Production Ready</td>
+                        </tr>
+                        <tr>
+                            <td class="category-cell">Cloud Platforms</td>
+                            <td class="tech-cell">AWS SageMaker, GCP Vertex AI, Azure ML</td>
+                            <td class="proficiency-cell advanced">Advanced</td>
+                            <td class="experience-cell">Multi-Cloud</td>
+                        </tr>
+                        <tr>
+                            <td class="category-cell">Databases</td>
+                            <td class="tech-cell">PostgreSQL, Neo4j, MongoDB, Redis</td>
+                            <td class="proficiency-cell advanced">Advanced</td>
+                            <td class="experience-cell">Graph & Vector</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -184,140 +164,188 @@
             
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>AI Coding Support Bot</h3>
-                        <span class="project-status">LangGraph</span>
-                    </div>
-                    <div class="project-description">
-                        <p>Multi-agent conversational AI system built with LangGraph for intelligent coding assistance. Features safety filtering and context-aware responses.</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">95%</span>
-                                <span class="metric-label">Satisfaction Rate</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Multi-Agent</span>
-                                <span class="metric-label">Architecture</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop&crop=center" alt="AI Agent Architecture" />
+                        <div class="project-overlay">
+                            <span class="project-tech">LangGraph</span>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/vivekprojects-GIT/AgenticAI/tree/main/coding_support_bot" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI Coding Support Bot</h3>
+                            <span class="project-status">Multi-Agent</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Multi-agent conversational AI system built with LangGraph for intelligent coding assistance. Features safety filtering and context-aware responses.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">95%</span>
+                                    <span class="metric-label">Satisfaction Rate</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Multi-Agent</span>
+                                    <span class="metric-label">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/vivekprojects-GIT/AgenticAI/tree/main/coding_support_bot" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>AI Code Review API</h3>
-                        <span class="project-status">FastAPI</span>
-                    </div>
-                    <div class="project-description">
-                        <p>FastAPI-powered code analysis system that identifies security vulnerabilities, performance issues, and code quality metrics in real-time.</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">12</span>
-                                <span class="metric-label">Vulnerability Types</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">FastAPI</span>
-                                <span class="metric-label">Production Ready</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop&crop=center" alt="Code Analysis Dashboard" />
+                        <div class="project-overlay">
+                            <span class="project-tech">FastAPI</span>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/vivekprojects-GIT/AgenticAI/tree/main/code_review_service" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI Code Review API</h3>
+                            <span class="project-status">Production</span>
+                        </div>
+                        <div class="project-description">
+                            <p>FastAPI-powered code analysis system that identifies security vulnerabilities, performance issues, and code quality metrics in real-time.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">12</span>
+                                    <span class="metric-label">Vulnerability Types</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">FastAPI</span>
+                                    <span class="metric-label">Production Ready</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/vivekprojects-GIT/AgenticAI/tree/main/code_review_service" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Efficient Multi-Domain LLM</h3>
-                        <span class="project-status">QLoRA</span>
-                    </div>
-                    <div class="project-description">
-                        <p>Advanced language model fine-tuned using QLoRA technique for multiple domains with optimized memory usage and training efficiency.</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">98%</span>
-                                <span class="metric-label">Multi-Domain Accuracy</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">6GB</span>
-                                <span class="metric-label">Memory Usage</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop&crop=center" alt="Neural Network Training" />
+                        <div class="project-overlay">
+                            <span class="project-tech">QLoRA</span>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/vivekprojects-GIT/EFFICIENT-MULTI-DOMAIN-LANGUAGE-MODEL" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Efficient Multi-Domain LLM</h3>
+                            <span class="project-status">Optimization</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Advanced language model fine-tuned using QLoRA technique for multiple domains with optimized memory usage and training efficiency.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">98%</span>
+                                    <span class="metric-label">Multi-Domain Accuracy</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">6GB</span>
+                                    <span class="metric-label">Memory Usage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/vivekprojects-GIT/EFFICIENT-MULTI-DOMAIN-LANGUAGE-MODEL" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>HealthGenie App</h3>
-                        <span class="project-status">RAG System</span>
-                    </div>
-                    <div class="project-description">
-                        <p>Healthcare AI application with Retrieval-Augmented Generation for intelligent health recommendations and medical information retrieval.</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">RAG</span>
-                                <span class="metric-label">Architecture</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Healthcare</span>
-                                <span class="metric-label">Domain</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=200&fit=crop&crop=center" alt="Healthcare AI Interface" />
+                        <div class="project-overlay">
+                            <span class="project-tech">RAG</span>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/vivekprojects-GIT/healthgenie_app" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>HealthGenie App</h3>
+                            <span class="project-status">Healthcare</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Healthcare AI application with Retrieval-Augmented Generation for intelligent health recommendations and medical information retrieval.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">RAG</span>
+                                    <span class="metric-label">Architecture</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Healthcare</span>
+                                    <span class="metric-label">Domain</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/vivekprojects-GIT/healthgenie_app" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>Retrieval-Augmented Generation</h3>
-                        <span class="project-status">Vector Search</span>
-                    </div>
-                    <div class="project-description">
-                        <p>Advanced RAG system implementation with vector search, semantic routing, and knowledge graph integration for enhanced information retrieval.</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">Vector</span>
-                                <span class="metric-label">Search Engine</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Neo4j</span>
-                                <span class="metric-label">Knowledge Graph</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center" alt="Data Visualization Dashboard" />
+                        <div class="project-overlay">
+                            <span class="project-tech">Vector</span>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/vivekprojects-GIT/Retrieval-Augmented-Generation" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Retrieval-Augmented Generation</h3>
+                            <span class="project-status">Vector Search</span>
+                        </div>
+                        <div class="project-description">
+                            <p>Advanced RAG system implementation with vector search, semantic routing, and knowledge graph integration for enhanced information retrieval.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">Vector</span>
+                                    <span class="metric-label">Search Engine</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Neo4j</span>
+                                    <span class="metric-label">Knowledge Graph</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/vivekprojects-GIT/Retrieval-Augmented-Generation" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>MLOps US Visa Prediction</h3>
-                        <span class="project-status">MLOps</span>
-                    </div>
-                    <div class="project-description">
-                        <p>End-to-end MLOps pipeline for US visa prediction using machine learning models with automated training, deployment, and monitoring.</p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">MLOps</span>
-                                <span class="metric-label">Pipeline</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Prediction</span>
-                                <span class="metric-label">Model</span>
-                            </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center" alt="MLOps Pipeline" />
+                        <div class="project-overlay">
+                            <span class="project-tech">MLOps</span>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/vivekprojects-GIT/MLOPS_US_VISA_PREDICTION" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>MLOps US Visa Prediction</h3>
+                            <span class="project-status">Pipeline</span>
+                        </div>
+                        <div class="project-description">
+                            <p>End-to-end MLOps pipeline for US visa prediction using machine learning models with automated training, deployment, and monitoring.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">MLOps</span>
+                                    <span class="metric-label">Pipeline</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Prediction</span>
+                                    <span class="metric-label">Model</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/vivekprojects-GIT/MLOPS_US_VISA_PREDICTION" target="_blank" class="btn btn-primary">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
