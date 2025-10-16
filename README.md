@@ -170,68 +170,6 @@ teams_using = "5+ development teams"
 
 ---
 
-## Professional Experience
-
-<div align="center">
-
-### AI Engineer - Webflow *(Jan 2025 - Present)*
-
-```python
-webflow_impact = {
-    "users_impacted": "100,000+",
-    "content_relevance": "+30%",
-    "setup_time_reduction": "40%",
-    "system_uptime": "99.2%",
-    "modules_launched": "5+"
-}
-```
-
-**Key Achievements:**
-- Designed and launched AI-driven features across 5+ Webflow modules
-- Enhanced usability for over 100,000 users with intelligent layout suggestions
-- Achieved 30% content relevance increase and 40% setup time reduction
-
----
-
-### Machine Learning Engineer - Accenture *(Jan 2021 - Jul 2023)*
-
-```python
-accenture_optimization = {
-    "memory_reduction": "40%",
-    "training_speedup": "2.5x",
-    "inference_improvement": "30%",
-    "resource_savings": "35%",
-    "models_deployed": "6"
-}
-```
-
-**Key Achievements:**
-- Applied LoRA techniques for 40% memory usage reduction and 2.5x training time improvement
-- Deployed 6 enterprise NLP models with 30% inference latency improvement
-- Achieved 35% compute resource savings across automation workflows
-
----
-
-### Junior Machine Learning Engineer - BizGaze Limited *(Jun 2019 - Jan 2021)*
-
-```python
-bizgaze_metrics = {
-    "over_provisioning_reduction": "20%",
-    "outage_decrease": "15%",
-    "log_entries_processed": "2.1M+",
-    "daily_api_requests": "500+"
-}
-```
-
-**Key Achievements:**
-- Developed ML models (Random Forest, XGBoost, LSTM) for resource forecasting
-- Reduced over-provisioning by 20% and unplanned outages by 15%
-- Processed 2.1M+ log entries with 500+ daily API requests
-
-</div>
-
----
-
 ## Key Achievements
 
 <div align="center">
@@ -268,7 +206,6 @@ achievements = {
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-katkurisaivivek95@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:katkurisaivivek95@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-vivekprojects--GIT-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vivekprojects-GIT)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sai%20Vivek-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/saivivek)
 
