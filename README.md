@@ -3,7 +3,7 @@
 # Sai Vivek
 ### *Generative AI Engineer*
 
-[![AI Engineer](https://img.shields.io/badge/AI%20Engineer-Webflow-blue?style=for-the-badge&logo=openai&logoColor=white)](https://webflow.com)
+[![AI Engineer](https://img.shields.io/badge/AI%20Engineer-Professional-blue?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
 [![Python](https://img.shields.io/badge/Python-Expert-green?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![LLM](https://img.shields.io/badge/LLM%20Fine--tuning-LoRA%20%7C%20QLoRA-purple?style=for-the-badge&logo=openai&logoColor=white)](https://huggingface.co)
 [![RAG](https://img.shields.io/badge/RAG%20Systems-Vector%20DB%20%7C%20Pinecone-orange?style=for-the-badge&logo=vector&logoColor=white)](https://pinecone.io)
@@ -23,7 +23,6 @@ class SaiVivek:
     def __init__(self):
         self.name = "Sai Vivek"
         self.role = "Generative AI Engineer"
-        self.company = "Webflow"
         self.passion = "Building intelligent AI systems"
         
     def solve_problems(self):
@@ -38,7 +37,6 @@ class SaiVivek:
 I'm a passionate AI Engineer specializing in **Generative AI**, **LLM fine-tuning**, **RAG systems**, and **multi-agent architectures**. I build production-ready applications that retrieve, reason, and generate intelligent solutions for real-world problems.
 
 **Current Focus:** Making advanced AI accessible and efficient  
-**Current Role:** AI Engineer at Webflow  
 **Mission:** Transform complex AI research into production-ready solutions
 
 ---
@@ -178,7 +176,7 @@ teams_using = "5+ development teams"
 achievements = {
     "accuracy": "100% across 6 domains",
     "speedup": "1.85x MLX optimization", 
-    "users_impacted": "100,000+ at Webflow",
+    "users_impacted": "100,000+ users",
     "satisfaction": "95% in production systems",
     "review_time": "35% reduction",
     "memory_efficiency": "6GB for multi-domain training",
@@ -193,7 +191,7 @@ achievements = {
 |--------|-------|--------|
 | **Accuracy** | 100% | Across 6 domains |
 | **Speedup** | 1.85x | Apple Silicon optimization |
-| **Users** | 100,000+ | Webflow platform |
+| **Users** | 100,000+ | Production platforms |
 | **Satisfaction** | 95% | Production systems |
 | **Efficiency** | 35% | Code review time reduction |
 | **Memory** | 6GB | Multi-domain training |
