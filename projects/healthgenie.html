@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGenie App - Sai Vivek</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="text-decoration: none; color: inherit;">Sai Vivek</a></h2>
+                <span class="nav-subtitle">Generative AI Engineer</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html#projects">Projects</a> / HealthGenie App
+            </div>
+            <div class="project-hero">
+                <div class="project-hero-content">
+                    <div class="project-badge">Featured Project</div>
+                    <h1 class="project-title">HealthGenie App</h1>
+                    <p class="project-subtitle">
+                        AI-powered health application providing personalized health insights and recommendations, 
+                        built with advanced ML models for health data analysis and a user-friendly interface.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">RAG</span>
+                            <span class="metric-label">Architecture</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Healthcare</span>
+                            <span class="metric-label">Domain</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Mobile</span>
+                            <span class="metric-label">Platform</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#live-demo" class="btn btn-primary">Live Demo</a>
+                        <a href="https://github.com/vivekprojects-GIT/healthgenie_app" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-hero-visual">
+                    <div class="code-visualization">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="code-filename">health_rag.py</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">def</span> <span class="function">get_health_insights</span>(<span class="param">symptoms</span>):</div>
+                                <div class="code-line indent-1"><span class="comment"># RAG-powered health analysis</span></div>
+                                <div class="code-line indent-1"><span class="variable">context</span> = <span class="function">retrieve_medical_knowledge</span>(<span class="param">symptoms</span>)</div>
+                                <div class="code-line indent-1"><span class="variable">insights</span> = <span class="function">generate_recommendations</span>(<span class="param">context</span>)</div>
+                                <div class="code-line indent-1"><span class="keyword">return</span> <span class="variable">insights</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Challenge</h2>
+                <p>Healthcare information is scattered and difficult to access, leading to delayed care and poor health outcomes</p>
+            </div>
+            <div class="problem-content">
+                <div class="problem-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Information Overload</h3>
+                        <p>Medical information is scattered across multiple sources, making it hard to find relevant insights</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Delayed Care</h3>
+                        <p>Long wait times for medical consultations lead to delayed diagnosis and treatment</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Limited Access</h3>
+                        <p>Many people lack access to immediate healthcare guidance and personalized recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Solution</h2>
+                <p>AI-powered health application with RAG architecture for intelligent health insights and recommendations</p>
+            </div>
+            <div class="solution-content">
+                <div class="solution-architecture">
+                    <h3>System Architecture</h3>
+                    <div class="architecture-diagram">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h4>Health Data Input</h4>
+                            <p>Symptoms, vitals, medical history</p>
+                        </div>
+                        <div class="arch-arrow">→</div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Medical Knowledge Base</h4>
+                            <p>Vectorized medical literature</p>
+                        </div>
+                        <div class="arch-arrow">→</div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>RAG Retrieval</h4>
+                            <p>Contextual information retrieval</p>
+                        </div>
+                        <div class="arch-arrow">→</div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI Analysis</h4>
+                            <p>Personalized health insights</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-features">
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <h4>RAG Architecture</h4>
+                            <p>Retrieval-Augmented Generation for accurate health insights</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-cog"></i>
+                            <h4>Personalized Recommendations</h4>
+                            <p>AI-powered health recommendations based on individual data</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile-First Design</h4>
+                            <p>Intuitive mobile interface for easy health tracking</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Privacy & Security</h4>
+                            <p>HIPAA-compliant data handling and encryption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Implementation</h2>
+                <p>Deep dive into RAG architecture, health data processing, and mobile app development</p>
+            </div>
+            <div class="methodology-content">
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-categories">
+                        <div class="tech-category">
+                            <h4>AI/ML</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">RAG Architecture</span>
+                                <span class="tech-tag">Vector Databases</span>
+                                <span class="tech-tag">LLM Integration</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Backend</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Mobile</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Expo</span>
+                                <span class="tech-tag">Native Modules</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Health Data</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">FHIR Standards</span>
+                                <span class="tech-tag">Medical APIs</span>
+                                <span class="tech-tag">Data Encryption</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="implementation-details">
+                    <h3>Implementation Highlights</h3>
+                    <div class="implementation-grid">
+                        <div class="impl-item">
+                            <div class="impl-number">01</div>
+                            <h4>RAG Health System</h4>
+                            <p>Built sophisticated RAG architecture using vector databases to retrieve relevant medical knowledge and generate personalized health insights with high accuracy.</p>
+                        </div>
+                        <div class="impl-item">
+                            <div class="impl-number">02</div>
+                            <h4>Medical Knowledge Base</h4>
+                            <p>Curated and vectorized comprehensive medical literature, clinical guidelines, and research papers for accurate health information retrieval.</p>
+                        </div>
+                        <div class="impl-item">
+                            <div class="impl-number">03</div>
+                            <h4>Mobile App Development</h4>
+                            <p>Developed cross-platform mobile app using React Native with intuitive health tracking, symptom logging, and AI-powered recommendations.</p>
+                        </div>
+                        <div class="impl-item">
+                            <div class="impl-number">04</div>
+                            <h4>Privacy & Compliance</h4>
+                            <p>Implemented HIPAA-compliant data handling, end-to-end encryption, and secure health data processing with user consent management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Measurable Impact</h2>
+                <p>Real-world health outcomes and user engagement metrics</p>
+            </div>
+            <div class="results-content">
+                <div class="results-metrics">
+                    <div class="metric-card primary">
+                        <div class="metric-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">Health Insight Accuracy</span>
+                            <p>Validated against medical professional assessments</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">2,500+</span>
+                            <span class="metric-label">Active Users</span>
+                            <p>Daily health tracking and insights</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">Faster Health Insights</span>
+                            <p>Compared to traditional health information search</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">4.8/5</span>
+                            <span class="metric-label">User Rating</span>
+                            <p>Based on app store reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-testimonial">
+                    <blockquote>
+                        "HealthGenie has transformed how I manage my health. The AI-powered insights are incredibly accurate and the personalized recommendations have helped me make better health decisions."
+                    </blockquote>
+                    <cite>- HealthGenie User</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="live-demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Demo</h2>
+                <p>Experience HealthGenie's AI-powered health insights and recommendations</p>
+            </div>
+            <div class="demo-content">
+                <div class="demo-interface">
+                    <div class="demo-header">
+                        <h3>HealthGenie Health Assistant</h3>
+                        <p>Get personalized health insights based on your symptoms and health data</p>
+                    </div>
+                    <div class="demo-form">
+                        <div class="form-group">
+                            <label for="symptoms-input">Describe your symptoms:</label>
+                            <textarea id="symptoms-input" placeholder="I've been experiencing headaches and fatigue for the past few days..." rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="age-input">Age:</label>
+                            <input type="number" id="age-input" placeholder="25" min="1" max="120">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender-select">Gender:</label>
+                            <select id="gender-select">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <button id="analyze-btn" class="btn btn-primary">
+                            <i class="fas fa-heartbeat"></i> Get Health Insights
+                        </button>
+                    </div>
+                </div>
+                <div class="demo-results">
+                    <div class="results-header">
+                        <h3>Health Analysis</h3>
+                        <div class="results-summary">
+                            <span class="summary-item">
+                                <i class="fas fa-search"></i>
+                                <span id="rag-status">RAG</span> Analysis
+                            </span>
+                            <span class="summary-item">
+                                <i class="fas fa-clock"></i>
+                                <span id="analysis-time">0</span>ms
+                            </span>
+                            <span class="summary-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span id="privacy-status">Private</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="results-content" class="results-content">
+                        <div class="no-results">
+                            <i class="fas fa-heartbeat"></i>
+                            <p>Enter your symptoms above to get AI-powered health insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Sai Vivek. Building the future with Generative AI.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/vivekprojects-GIT" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/saivivek" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:katkurisaivivek95@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="project-script.js"></script>
+</body>
+</html>

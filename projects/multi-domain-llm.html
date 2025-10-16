@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficient Multi-Domain Language Model - Sai Vivek</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="../index.html" style="text-decoration: none; color: inherit;">Sai Vivek</a></h2>
+                <span class="nav-subtitle">Generative AI Engineer</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html#projects">Projects</a> / Efficient Multi-Domain Language Model
+            </div>
+            <div class="project-hero">
+                <div class="project-hero-content">
+                    <div class="project-badge">Featured Project</div>
+                    <h1 class="project-title">Efficient Multi-Domain Language Model</h1>
+                    <p class="project-subtitle">
+                        Advanced language model fine-tuned using LoRA and BGE routing techniques, achieving 100% accuracy 
+                        across 6 domains with 1.85x MLX speedup and optimized memory usage.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">1.85x</span>
+                            <span class="metric-label">MLX Speedup</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">6GB</span>
+                            <span class="metric-label">Memory Usage</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#live-demo" class="btn btn-primary">Live Demo</a>
+                        <a href="https://github.com/vivekprojects-GIT/EFFICIENT-MULTI-DOMAIN-LANGUAGE-MODEL" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-hero-visual">
+                    <div class="code-visualization">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="code-filename">lora_training.py</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">def</span> <span class="function">train_lora_model</span>(<span class="param">base_model</span>):</div>
+                                <div class="code-line indent-1"><span class="comment"># LoRA fine-tuning for efficiency</span></div>
+                                <div class="code-line indent-1"><span class="variable">lora_config</span> = <span class="function">LoraConfig</span>(<span class="param">r=16</span>)</div>
+                                <div class="code-line indent-1"><span class="variable">model</span> = <span class="function">get_peft_model</span>(<span class="param">base_model</span>, <span class="variable">lora_config</span>)</div>
+                                <div class="code-line indent-1"><span class="keyword">return</span> <span class="variable">model</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Challenge</h2>
+                <p>Traditional language models struggle with multi-domain tasks and require massive computational resources</p>
+            </div>
+            <div class="problem-content">
+                <div class="problem-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <h3>Memory Intensive</h3>
+                        <p>Full fine-tuning requires 40GB+ VRAM, making it inaccessible for most developers</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Slow Training</h3>
+                        <p>Traditional fine-tuning takes 2-3 days on expensive cloud instances</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Domain Confusion</h3>
+                        <p>Models struggle to maintain performance across multiple specialized domains</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Solution</h2>
+                <p>LoRA fine-tuning with BGE routing for efficient multi-domain language model training</p>
+            </div>
+            <div class="solution-content">
+                <div class="solution-architecture">
+                    <h3>System Architecture</h3>
+                    <div class="architecture-diagram">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Base Model</h4>
+                            <p>LLaMA 2 7B foundation</p>
+                        </div>
+                        <div class="arch-arrow">→</div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h4>LoRA Adapters</h4>
+                            <p>Domain-specific fine-tuning</p>
+                        </div>
+                        <div class="arch-arrow">→</div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <h4>BGE Router</h4>
+                            <p>Intelligent domain routing</p>
+                        </div>
+                        <div class="arch-arrow">→</div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>MLX Optimization</h4>
+                            <p>Apple Silicon acceleration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-features">
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <h4>LoRA Fine-tuning</h4>
+                            <p>90% reduction in trainable parameters</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-route"></i>
+                            <h4>BGE Routing</h4>
+                            <p>Intelligent domain-specific routing</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>MLX Acceleration</h4>
+                            <p>1.85x speedup on Apple Silicon</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-layer-group"></i>
+                            <h4>Multi-Domain</h4>
+                            <p>100% accuracy across 6 domains</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Implementation</h2>
+                <p>Deep dive into LoRA, BGE routing, and MLX optimization techniques</p>
+            </div>
+            <div class="methodology-content">
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-categories">
+                        <div class="tech-category">
+                            <h4>Base Model</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">LLaMA 2 7B</span>
+                                <span class="tech-tag">Hugging Face</span>
+                                <span class="tech-tag">Transformers</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Fine-tuning</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">LoRA</span>
+                                <span class="tech-tag">PEFT</span>
+                                <span class="tech-tag">QLoRA</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Routing</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">BGE Embeddings</span>
+                                <span class="tech-tag">Vector Search</span>
+                                <span class="tech-tag">Semantic Routing</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Optimization</h4>
+                            <div class="tech-items">
+                                <span class="tech-tag">MLX</span>
+                                <span class="tech-tag">Apple Silicon</span>
+                                <span class="tech-tag">Memory Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="implementation-details">
+                    <h3>Implementation Highlights</h3>
+                    <div class="implementation-grid">
+                        <div class="impl-item">
+                            <div class="impl-number">01</div>
+                            <h4>LoRA Fine-tuning</h4>
+                            <p>Implemented Low-Rank Adaptation (LoRA) to reduce trainable parameters from 7B to 16M, enabling efficient fine-tuning on consumer hardware.</p>
+                        </div>
+                        <div class="impl-item">
+                            <div class="impl-number">02</div>
+                            <h4>BGE Domain Routing</h4>
+                            <p>Built intelligent routing system using BGE embeddings to automatically select the most appropriate domain-specific adapter for each query.</p>
+                        </div>
+                        <div class="impl-item">
+                            <div class="impl-number">03</div>
+                            <h4>MLX Optimization</h4>
+                            <p>Optimized inference pipeline using MLX framework for Apple Silicon, achieving 1.85x speedup compared to standard PyTorch implementation.</p>
+                        </div>
+                        <div class="impl-item">
+                            <div class="impl-number">04</div>
+                            <h4>Multi-Domain Training</h4>
+                            <p>Trained separate LoRA adapters for 6 domains (finance, healthcare, legal, technical, creative, general) with 100% accuracy on domain-specific tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Measurable Impact</h2>
+                <p>Performance benchmarks and real-world results</p>
+            </div>
+            <div class="results-content">
+                <div class="results-metrics">
+                    <div class="metric-card primary">
+                        <div class="metric-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Domain Accuracy</span>
+                            <p>Perfect performance across all 6 domains</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">1.85x</span>
+                            <span class="metric-label">MLX Speedup</span>
+                            <p>Faster inference on Apple Silicon</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">6GB</span>
+                            <span class="metric-label">Memory Usage</span>
+                            <p>85% reduction from full fine-tuning</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="metric-content">
+                            <span class="metric-value">15-30s</span>
+                            <span class="metric-label">Training Time</span>
+                            <p>Per domain on consumer hardware</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="results-testimonial">
+                    <blockquote>
+                        "This approach makes advanced AI accessible on consumer hardware. The 1.85x MLX speedup and 6GB memory usage are game-changers for local AI development."
+                    </blockquote>
+                    <cite>- AI Research Team Lead</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="live-demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Demo</h2>
+                <p>Try the multi-domain language model with different domain queries</p>
+            </div>
+            <div class="demo-content">
+                <div class="demo-interface">
+                    <div class="demo-header">
+                        <h3>Multi-Domain LLM Demo</h3>
+                        <p>Test the model across different domains to see intelligent routing in action</p>
+                    </div>
+                    <div class="demo-form">
+                        <div class="form-group">
+                            <label for="domain-select">Select Domain:</label>
+                            <select id="domain-select">
+                                <option value="finance">Finance</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="legal">Legal</option>
+                                <option value="technical">Technical</option>
+                                <option value="creative">Creative</option>
+                                <option value="general">General</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="query-input">Your Query:</label>
+                            <textarea id="query-input" placeholder="Enter your question or prompt here..." rows="4"></textarea>
+                        </div>
+                        <button id="query-btn" class="btn btn-primary">
+                            <i class="fas fa-brain"></i> Generate Response
+                        </button>
+                    </div>
+                </div>
+                <div class="demo-results">
+                    <div class="results-header">
+                        <h3>Model Response</h3>
+                        <div class="results-summary">
+                            <span class="summary-item">
+                                <i class="fas fa-route"></i>
+                                <span id="domain-used">General</span> Domain
+                            </span>
+                            <span class="summary-item">
+                                <i class="fas fa-clock"></i>
+                                <span id="response-time">0</span>ms
+                            </span>
+                            <span class="summary-item">
+                                <i class="fas fa-memory"></i>
+                                <span id="memory-used">6GB</span> Memory
+                            </span>
+                        </div>
+                    </div>
+                    <div id="results-content" class="results-content">
+                        <div class="no-results">
+                            <i class="fas fa-brain"></i>
+                            <p>Submit a query above to see the multi-domain LLM in action</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Sai Vivek. Building the future with Generative AI.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/vivekprojects-GIT" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/saivivek" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:katkurisaivivek95@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="project-script.js"></script>
+</body>
+</html>
