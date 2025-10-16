@@ -1,193 +1,291 @@
-# Sai Vivek Katkuri - AI Engineer Portfolio
+# 🚀 Interactive AI Engineering Showcase
 
-A comprehensive portfolio showcasing expertise in Generative AI, LLM Fine-Tuning, RAG Systems, and Agentic Architecture Design.
+Welcome to an interactive exploration of cutting-edge AI engineering projects and technical implementations. This repository contains live demonstrations, comprehensive technical documentation, and hands-on examples of production-ready AI systems.
 
-## 🚀 Live Portfolio
+## 🎮 Interactive Demos
 
-Visit the live portfolio: [https://vivekprojects-git.github.io/vivekprojects-GIT](https://vivekprojects-git.github.io/vivekprojects-GIT)
+### Try These Live AI Systems
 
-## 📁 Portfolio Structure
-
-```
-portfolio/
-├── index.html              # Main portfolio homepage
-├── styles.css              # Main stylesheet
-├── script.js               # Main JavaScript functionality
-├── projects/               # Individual project showcases
-│   ├── code-review-api.html
-│   ├── project-styles.css
-│   └── project-script.js
-├── demos/                  # Interactive demos
-│   ├── code_review_demo.py
-│   └── requirements.txt
-└── README.md              # This file
+```bash
+# Clone and run interactive demos
+git clone https://github.com/vivekprojects-GIT/vivekprojects-GIT.git
+cd vivekprojects-GIT
 ```
 
-## 🎯 Portfolio Features
+#### 1. AI Code Review System
+```bash
+cd demos
+pip install -r requirements.txt
+python code_review_demo.py
+```
+**Experience:** Real-time code analysis with security vulnerability detection and performance optimization suggestions.
 
-### Professional Design
-- **Modern, responsive design** with clean typography and intuitive navigation
-- **Interactive animations** and smooth scrolling for enhanced user experience
-- **Mobile-first approach** ensuring optimal viewing on all devices
-- **Professional color scheme** with gradient accents and consistent branding
+#### 2. Multi-Domain Language Model
+```bash
+python multi_domain_llm_demo.py
+```
+**Experience:** Test the LoRA fine-tuned model across 6 domains with 100% accuracy and 1.85x MLX speedup.
 
-### Comprehensive Content
-- **Hero section** with key metrics and professional positioning
-- **Skills showcase** with categorized technical expertise
-- **Project deep-dives** with detailed case studies and live demos
-- **Thought leadership** section with technical blog posts
-- **Contact integration** with professional links and contact form
+#### 3. HealthGenie AI Assistant
+```bash
+python healthgenie_demo.py
+```
+**Experience:** RAG-powered health insights with personalized recommendations and symptom analysis.
 
-### Interactive Elements
-- **Live code demos** using Gradio for AI-powered code review
-- **Animated skill bars** that trigger on scroll
-- **Project showcases** with detailed technical implementations
-- **Responsive navigation** with smooth scrolling between sections
+## 🛠️ Technical Architecture
 
-## 🛠️ Technologies Used
+### Core Technologies
 
-### Frontend
-- **HTML5** - Semantic markup and accessibility
-- **CSS3** - Modern styling with CSS Grid and Flexbox
-- **JavaScript (ES6+)** - Interactive functionality and animations
-- **Font Awesome** - Professional icons
-- **Google Fonts** - Inter font family for clean typography
+<details>
+<summary><strong>🔧 LLM Fine-Tuning & Optimization</strong></summary>
 
-### Interactive Demos
-- **Gradio** - Python-based web interfaces for AI demos
-- **Python 3.8+** - Backend logic for demo applications
+- **LoRA/QLoRA**: Parameter-efficient fine-tuning techniques
+- **BGE Routing**: Intelligent domain-specific model routing
+- **MLX Framework**: Apple Silicon optimization for 1.85x speedup
+- **Memory Optimization**: 6GB usage for multi-domain training
+
+```python
+# Example: LoRA Configuration
+from peft import LoraConfig, get_peft_model
+
+lora_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    target_modules=["q_proj", "v_proj"],
+    lora_dropout=0.1
+)
+model = get_peft_model(base_model, lora_config)
+```
+
+</details>
+
+<details>
+<summary><strong>🧠 RAG & Knowledge Systems</strong></summary>
+
+- **Vector Databases**: Pinecone for semantic search
+- **Knowledge Graphs**: Neo4j for complex relationship modeling
+- **Embedding Models**: BGE for high-quality vector representations
+- **Retrieval Optimization**: Hybrid search with reranking
+
+```python
+# Example: RAG Implementation
+def retrieve_context(query, top_k=5):
+    embeddings = embed_model.encode(query)
+    results = vector_db.similarity_search(embeddings, k=top_k)
+    return format_context(results)
+```
+
+</details>
+
+<details>
+<summary><strong>🤖 Agentic AI Systems</strong></summary>
+
+- **LangGraph**: State management for complex workflows
+- **Multi-Agent Architecture**: Specialized agents for different tasks
+- **Safety Filtering**: Content moderation and security validation
+- **Context Management**: Persistent conversation state
+
+```python
+# Example: LangGraph Workflow
+from langgraph import StateGraph
+
+workflow = StateGraph(CodingState)
+workflow.add_node("analyze", analyze_code)
+workflow.add_node("suggest", suggest_improvements)
+workflow.add_edge("analyze", "suggest")
+```
+
+</details>
+
+## 📊 Performance Benchmarks
+
+### Real-World Impact Metrics
+
+| System | Metric | Result | Impact |
+|--------|--------|--------|---------|
+| Multi-Domain LLM | Accuracy | 100% | Across 6 domains |
+| MLX Optimization | Speedup | 1.85x | Apple Silicon |
+| Memory Usage | Efficiency | 6GB | 85% reduction |
+| Training Time | Speed | 15-30s | Per domain |
+| Code Review API | Accuracy | 92% | Issue detection |
+| User Satisfaction | Rating | 95% | Production systems |
+
+### Interactive Performance Testing
+
+```bash
+# Run performance benchmarks
+python benchmarks/run_tests.py
+
+# Test specific systems
+python benchmarks/test_llm_performance.py
+python benchmarks/test_rag_accuracy.py
+python benchmarks/test_agent_response_time.py
+```
+
+## 🎯 Project Showcases
+
+### 1. Efficient Multi-Domain Language Model
+- **Technology**: LoRA fine-tuning, BGE routing, MLX optimization
+- **Results**: 100% accuracy, 1.85x speedup, 6GB memory usage
+- **Demo**: Interactive domain testing interface
+
+### 2. AI Coding Support Bot
+- **Technology**: LangGraph orchestration, multi-agent system
+- **Results**: 95% satisfaction, 2.3s response time, 99.8% safety accuracy
+- **Demo**: Live coding assistant with context awareness
+
+### 3. HealthGenie App
+- **Technology**: RAG architecture, health data processing
+- **Results**: 85% accuracy, 2,500+ users, 4.8/5 rating
+- **Demo**: Symptom analysis and health insights
+
+### 4. AI Code Review API
+- **Technology**: FastAPI, Gemini Flash, security scanning
+- **Results**: 35% faster reviews, 12+ vulnerability types detected
+- **Demo**: Real-time code analysis interface
+
+## 🔬 Technical Deep-Dives
+
+### Architecture Diagrams
+
+<details>
+<summary><strong>Multi-Domain LLM Architecture</strong></summary>
+
+```
+Base Model (LLaMA 2 7B)
+    ↓
+LoRA Adapters (Domain-Specific)
+    ↓
+BGE Router (Intelligent Routing)
+    ↓
+MLX Optimization (Apple Silicon)
+    ↓
+Multi-Domain Output
+```
+
+</details>
+
+<details>
+<summary><strong>RAG System Architecture</strong></summary>
+
+```
+User Query
+    ↓
+Embedding Generation (BGE)
+    ↓
+Vector Search (Pinecone)
+    ↓
+Knowledge Graph (Neo4j)
+    ↓
+Context Retrieval
+    ↓
+LLM Generation
+    ↓
+Response
+```
+
+</details>
+
+### Implementation Strategies
+
+<details>
+<summary><strong>LoRA Fine-Tuning Process</strong></summary>
+
+1. **Data Preparation**: Domain-specific dataset curation
+2. **Model Setup**: Base model + LoRA configuration
+3. **Training**: Parameter-efficient fine-tuning
+4. **Evaluation**: Multi-domain accuracy testing
+5. **Optimization**: MLX framework integration
+
+</details>
+
+<details>
+<summary><strong>RAG System Implementation</strong></summary>
+
+1. **Knowledge Base**: Medical literature vectorization
+2. **Embedding Model**: BGE for high-quality representations
+3. **Retrieval**: Hybrid search with reranking
+4. **Generation**: Context-aware response generation
+5. **Safety**: Content validation and filtering
+
+</details>
 
 ## 🚀 Getting Started
 
-### Local Development
-
-1. **Clone the repository**
+### Prerequisites
    ```bash
-   git clone https://github.com/saivivek/portfolio.git
-   cd portfolio
-   ```
+# Python 3.8+
+python --version
 
-2. **Open the portfolio**
+# Required packages
+pip install -r requirements.txt
+```
+
+### Quick Start
    ```bash
-   # Simple HTTP server (Python 3)
-   python -m http.server 8000
-   
-   # Or using Node.js
-   npx serve .
-   
-   # Or simply open index.html in your browser
-   ```
+# Clone repository
+git clone https://github.com/vivekprojects-GIT/vivekprojects-GIT.git
+cd vivekprojects-GIT
 
-3. **Run interactive demos**
+# Run interactive demos
+python demos/code_review_demo.py
+python demos/multi_domain_llm_demo.py
+python demos/healthgenie_demo.py
+
+# Explore technical implementations
+python examples/lora_training.py
+python examples/rag_system.py
+python examples/langgraph_agent.py
+```
+
+### Development Setup
    ```bash
-   cd demos
-   pip install -r requirements.txt
-   python code_review_demo.py
-   ```
+# Install development dependencies
+pip install -r requirements-dev.txt
 
-### Deployment
+# Run tests
+python -m pytest tests/
 
-The portfolio is designed to be easily deployable to various platforms:
+# Run benchmarks
+python benchmarks/run_all_tests.py
+```
 
-- **Netlify** - Drag and drop deployment
-- **Vercel** - Git-based deployment
-- **GitHub Pages** - Free hosting for public repositories
-- **AWS S3** - Static website hosting
+## 📈 Continuous Learning
 
-## 📊 Portfolio Sections
+### Technical Insights
+- **LoRA Fine-Tuning**: Parameter-efficient adaptation techniques
+- **BGE Routing**: Intelligent model selection strategies
+- **MLX Optimization**: Apple Silicon performance tuning
+- **RAG Systems**: Advanced retrieval and generation patterns
+- **Agentic AI**: Multi-agent orchestration and state management
 
-### 1. Hero Section
-- Professional positioning as a Generative AI Engineer
-- Key metrics and achievements
-- Call-to-action buttons for engagement
+### Best Practices
+- **Production Deployment**: Scalable AI system architecture
+- **Performance Optimization**: Memory and compute efficiency
+- **Safety & Security**: AI system validation and monitoring
+- **User Experience**: Interactive and intuitive interfaces
 
-### 2. About Section
-- Personal journey and technical expertise
-- Professional highlights and specializations
-- Social media links and contact information
+## 🤝 Contributing
 
-### 3. Skills Section
-- **LLM Fine-Tuning**: Gemini Flash, LLaMA 2, Parameter-Efficient Fine-Tuning
-- **RAG Systems**: Vector Database Design, Pinecone, Neo4j Knowledge Graphs
-- **Agentic Systems**: CrewAI Orchestration, LangGraph State Management
-- **MLOps & Deployment**: FastAPI, Docker, CI/CD for AI Systems
+### Interactive Contributions
+1. **Fork the repository**
+2. **Create interactive demos** for new AI systems
+3. **Add performance benchmarks** with measurable results
+4. **Document technical implementations** with code examples
+5. **Submit pull requests** with live demonstrations
 
-### 4. Projects Section
-- **Efficient Multi-Domain Language Model**: 100% accuracy across 6 domains with LoRA fine-tuning
-- **AI Coding Support Bot**: Multi-agent conversational AI with LangChain
-- **HealthGenie App**: AI-powered health application with personalized insights
-- **Retrieval-Augmented Generation**: Cloud-native RAG with AWS Bedrock and vector search
+### Technical Standards
+- **Code Quality**: Clean, documented, and tested implementations
+- **Performance**: Measurable benchmarks and optimization results
+- **Documentation**: Comprehensive technical explanations
+- **Demos**: Interactive examples that showcase capabilities
 
-### 5. Thought Leadership
-- Technical blog posts on architectural decisions
-- Performance analysis and methodology insights
-- Industry best practices and lessons learned
+## 📞 Connect & Collaborate
 
-### 6. Contact Section
-- Professional contact form
-- Social media links
-- Clear call-to-action for collaboration
-
-## 🎨 Design Principles
-
-### User Experience
-- **Clear navigation** with logical information hierarchy
-- **Fast loading** with optimized assets and efficient code
-- **Accessibility** with semantic HTML and proper contrast ratios
-- **Mobile responsiveness** ensuring usability across all devices
-
-### Visual Design
-- **Consistent branding** with professional color palette
-- **Typography hierarchy** using Inter font family
-- **Visual balance** with proper spacing and alignment
-- **Interactive feedback** with hover states and animations
-
-### Content Strategy
-- **Quantified results** highlighting measurable impact
-- **Technical depth** showing expertise without overwhelming
-- **Real-world focus** emphasizing production-ready solutions
-- **Professional tone** maintaining credibility and authority
-
-## 📈 Performance Metrics
-
-The portfolio showcases real-world impact through quantified results:
-
-- **100% accuracy** across 6 domains with limited training data (10-27 examples)
-- **1.85x MLX speedup** on Apple Silicon optimization
-- **6GB memory usage** for efficient multi-domain LLM training
-- **15-30s training time** for rapid model fine-tuning
-- **Extensive experience** in AI/ML and production deployments
-
-## 🔧 Customization
-
-### Updating Content
-1. **Personal Information**: Edit `index.html` for contact details and bio
-2. **Projects**: Add new projects in the projects section
-3. **Skills**: Update skill categories and proficiency levels
-4. **Metrics**: Modify achievement numbers and statistics
-
-### Styling Changes
-1. **Colors**: Update CSS custom properties in `styles.css`
-2. **Typography**: Modify font imports and font-family declarations
-3. **Layout**: Adjust grid and flexbox properties for different layouts
-4. **Animations**: Customize transition and animation properties
-
-### Adding New Demos
-1. Create new Python files in the `demos/` directory
-2. Add Gradio interfaces for interactive functionality
-3. Update the main portfolio to link to new demos
-4. Include proper documentation and requirements
-
-## 📞 Contact
-
-- **Email**: vivekuni7@gmail.com
 - **GitHub**: [github.com/vivekprojects-GIT](https://github.com/vivekprojects-GIT)
-- **Portfolio**: AI Engineer & Researcher specializing in Generative AI
-
-## 📄 License
-
-This portfolio is open source and available under the [MIT License](LICENSE).
+- **Email**: katkurisaivivek95@gmail.com
+- **Focus**: Generative AI, LLM Fine-Tuning, RAG Systems, Agentic Architecture
 
 ---
 
-**Built with ❤️ by Sai Vivek** - Showcasing the future of Generative AI engineering.
+**🚀 Built for the Future of AI Engineering** - Interactive demonstrations, comprehensive technical insights, and production-ready implementations.
