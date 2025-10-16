@@ -2007,47 +2007,167 @@ section {
     gap: 1rem;
 }
 
-/* Quick Stats Bar */
-.quick-stats {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 2rem 0;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid var(--border-color);
-    margin-top: 2rem;
-    position: relative;
-    z-index: 1;
+/* Impact Metrics Banner */
+.impact-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: 16px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
-.stat-item {
+.impact-metric {
     text-align: center;
-    padding: 1rem;
-    border-radius: 12px;
+    padding: 1.5rem;
     background: var(--bg-primary);
+    border-radius: 12px;
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
-    min-width: 120px;
 }
 
-.stat-item:hover {
+.impact-metric:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
 
-.stat-number {
+.impact-value {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
-.stat-text {
+.impact-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.impact-context {
     font-size: 0.9rem;
     color: var(--text-secondary);
+}
+
+/* Technical Pillars Section */
+.technical-pillars {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pillar-card {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pillar-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.pillar-icon {
+    margin-bottom: 1.5rem;
+}
+
+.pillar-icon .icon-agentic,
+.pillar-icon .icon-optimization,
+.pillar-icon .icon-mlops {
+    font-size: 3rem;
+    display: inline-block;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    color: white;
+}
+
+.pillar-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.pillar-subtitle {
+    font-size: 1rem;
     font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.pillar-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.pillar-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.pillar-metrics .metric {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.pillar-metrics .metric-value {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.pillar-metrics .metric-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.pillar-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pillar-link:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
 }
 
 /* Responsive Adjustments for Futuristic Elements */
@@ -2107,13 +2227,22 @@ section {
         font-size: 1.2rem;
     }
     
-    .quick-stats {
-        flex-direction: column;
+    .impact-banner {
+        grid-template-columns: 1fr;
         gap: 1rem;
-        padding: 1rem 0;
+        padding: 1.5rem;
     }
     
-    .stat-item {
-        min-width: auto;
+    .pillars-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .pillar-card {
+        padding: 2rem;
+    }
+    
+    .pillar-metrics {
+        grid-template-columns: 1fr;
     }
 }
