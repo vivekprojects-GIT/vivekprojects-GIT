@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Sai Vivek
+# Sai Vivek
 ### *Generative AI Engineer*
 
 [![AI Engineer](https://img.shields.io/badge/AI%20Engineer-Webflow-blue?style=for-the-badge&logo=openai&logoColor=white)](https://webflow.com)
@@ -14,7 +14,7 @@
 
 </div>
 
-## 🎯 About Me
+## About Me
 
 <div align="center">
 
@@ -37,17 +37,17 @@ class SaiVivek:
 
 I'm a passionate AI Engineer specializing in **Generative AI**, **LLM fine-tuning**, **RAG systems**, and **multi-agent architectures**. I build production-ready applications that retrieve, reason, and generate intelligent solutions for real-world problems.
 
-**🎯 Current Focus:** Making advanced AI accessible and efficient  
-**🏢 Current Role:** AI Engineer at Webflow  
-**🚀 Mission:** Transform complex AI research into production-ready solutions
+**Current Focus:** Making advanced AI accessible and efficient  
+**Current Role:** AI Engineer at Webflow  
+**Mission:** Transform complex AI research into production-ready solutions
 
 ---
 
-## 🛠️ Technical Skills
+## Technical Skills
 
 <div align="center">
 
-### 🤖 AI/ML Technologies
+### AI/ML Technologies
 
 | Technology | Expertise | Projects |
 |------------|-----------|----------|
@@ -56,7 +56,7 @@ I'm a passionate AI Engineer specializing in **Generative AI**, **LLM fine-tunin
 | **Agentic AI** | ⭐⭐⭐⭐⭐ | LangGraph, CrewAI, Multi-Agent |
 | **MLOps** | ⭐⭐⭐⭐⭐ | FastAPI, Docker, CI/CD |
 
-### 💻 Programming & Frameworks
+### Programming & Frameworks
 
 ```python
 # My Tech Stack
@@ -69,10 +69,10 @@ ai_tools = ["Hugging Face", "LangChain", "MLX", "Pinecone"]
 
 </div>
 
-### 🎨 Specializations
+### Specializations
 
 <details>
-<summary><strong>🍎 Apple Silicon Optimization</strong></summary>
+<summary><strong>Apple Silicon Optimization</strong></summary>
 
 - **MLX Framework**: 1.85x speedup on Apple Silicon
 - **Memory Efficiency**: 6GB usage for multi-domain training
@@ -81,7 +81,7 @@ ai_tools = ["Hugging Face", "LangChain", "MLX", "Pinecone"]
 </details>
 
 <details>
-<summary><strong>🚀 Production AI Deployment</strong></summary>
+<summary><strong>Production AI Deployment</strong></summary>
 
 - **Scalable Architecture**: Enterprise-grade solutions
 - **Real-time Systems**: Low-latency AI applications
@@ -90,7 +90,7 @@ ai_tools = ["Hugging Face", "LangChain", "MLX", "Pinecone"]
 </details>
 
 <details>
-<summary><strong>🔒 Safety & Security</strong></summary>
+<summary><strong>Safety & Security</strong></summary>
 
 - **Content Moderation**: AI system validation
 - **Security Scanning**: Vulnerability detection
@@ -100,11 +100,11 @@ ai_tools = ["Hugging Face", "LangChain", "MLX", "Pinecone"]
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 <div align="center">
 
-### 🧠 Efficient Multi-Domain Language Model
+### Efficient Multi-Domain Language Model
 
 ```python
 # Project Highlights
@@ -114,13 +114,13 @@ memory = "6GB efficient usage"
 training_time = "15-30s per domain"
 ```
 
-**🔧 Technology Stack:** LoRA fine-tuning, BGE routing, MLX optimization  
-**📊 Results:** 100% accuracy, 1.85x speedup, 6GB memory usage  
-**💡 Impact:** Making advanced AI accessible on consumer hardware
+**Technology Stack:** LoRA fine-tuning, BGE routing, MLX optimization  
+**Results:** 100% accuracy, 1.85x speedup, 6GB memory usage  
+**Impact:** Making advanced AI accessible on consumer hardware
 
 ---
 
-### 🤖 AI Coding Support Bot
+### AI Coding Support Bot
 
 ```python
 # Performance Metrics
@@ -130,13 +130,13 @@ safety_accuracy = "99.8%"
 users = "500+ daily active"
 ```
 
-**🔧 Technology Stack:** LangGraph orchestration, multi-agent system, safety filtering  
-**📊 Results:** 95% satisfaction, 2.3s response time, 99.8% safety accuracy  
-**💡 Impact:** Intelligent coding assistance with context awareness
+**Technology Stack:** LangGraph orchestration, multi-agent system, safety filtering  
+**Results:** 95% satisfaction, 2.3s response time, 99.8% safety accuracy  
+**Impact:** Intelligent coding assistance with context awareness
 
 ---
 
-### 🏥 HealthGenie App
+### HealthGenie App
 
 ```python
 # Health AI Metrics
@@ -146,13 +146,13 @@ rating = "4.8/5"
 response_time = "< 3s"
 ```
 
-**🔧 Technology Stack:** RAG architecture, health data processing, mobile-first design  
-**📊 Results:** 85% accuracy, 2,500+ users, 4.8/5 rating  
-**💡 Impact:** AI-powered health insights and personalized recommendations
+**Technology Stack:** RAG architecture, health data processing, mobile-first design  
+**Results:** 85% accuracy, 2,500+ users, 4.8/5 rating  
+**Impact:** AI-powered health insights and personalized recommendations
 
 ---
 
-### 🔍 AI Code Review API
+### AI Code Review API
 
 ```python
 # Code Analysis Performance
@@ -162,19 +162,19 @@ accuracy = "92%"
 teams_using = "5+ development teams"
 ```
 
-**🔧 Technology Stack:** FastAPI, Gemini Flash, security scanning, production deployment  
-**📊 Results:** 35% faster reviews, 12+ vulnerability types, 92% accuracy  
-**💡 Impact:** Automated code analysis with real-time security validation
+**Technology Stack:** FastAPI, Gemini Flash, security scanning, production deployment  
+**Results:** 35% faster reviews, 12+ vulnerability types, 92% accuracy  
+**Impact:** Automated code analysis with real-time security validation
 
 </div>
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
 <div align="center">
 
-### 🎯 AI Engineer - Webflow *(Jan 2025 - Present)*
+### AI Engineer - Webflow *(Jan 2025 - Present)*
 
 ```python
 webflow_impact = {
@@ -186,14 +186,14 @@ webflow_impact = {
 }
 ```
 
-**🚀 Key Achievements:**
+**Key Achievements:**
 - Designed and launched AI-driven features across 5+ Webflow modules
 - Enhanced usability for over 100,000 users with intelligent layout suggestions
 - Achieved 30% content relevance increase and 40% setup time reduction
 
 ---
 
-### 🏢 Machine Learning Engineer - Accenture *(Jan 2021 - Jul 2023)*
+### Machine Learning Engineer - Accenture *(Jan 2021 - Jul 2023)*
 
 ```python
 accenture_optimization = {
@@ -205,14 +205,14 @@ accenture_optimization = {
 }
 ```
 
-**🚀 Key Achievements:**
+**Key Achievements:**
 - Applied LoRA techniques for 40% memory usage reduction and 2.5x training time improvement
 - Deployed 6 enterprise NLP models with 30% inference latency improvement
 - Achieved 35% compute resource savings across automation workflows
 
 ---
 
-### 🔧 Junior Machine Learning Engineer - BizGaze Limited *(Jun 2019 - Jan 2021)*
+### Junior Machine Learning Engineer - BizGaze Limited *(Jun 2019 - Jan 2021)*
 
 ```python
 bizgaze_metrics = {
@@ -223,7 +223,7 @@ bizgaze_metrics = {
 }
 ```
 
-**🚀 Key Achievements:**
+**Key Achievements:**
 - Developed ML models (Random Forest, XGBoost, LSTM) for resource forecasting
 - Reduced over-provisioning by 20% and unplanned outages by 15%
 - Processed 2.1M+ log entries with 500+ daily API requests
@@ -232,7 +232,7 @@ bizgaze_metrics = {
 
 ---
 
-## 🏆 Key Achievements
+## Key Achievements
 
 <div align="center">
 
@@ -249,22 +249,22 @@ achievements = {
 }
 ```
 
-### 📊 Performance Dashboard
+### Performance Dashboard
 
 | Metric | Value | Impact |
 |--------|-------|--------|
-| 🎯 **Accuracy** | 100% | Across 6 domains |
-| ⚡ **Speedup** | 1.85x | Apple Silicon optimization |
-| 👥 **Users** | 100,000+ | Webflow platform |
-| 😊 **Satisfaction** | 95% | Production systems |
-| ⏱️ **Efficiency** | 35% | Code review time reduction |
-| 💾 **Memory** | 6GB | Multi-domain training |
+| **Accuracy** | 100% | Across 6 domains |
+| **Speedup** | 1.85x | Apple Silicon optimization |
+| **Users** | 100,000+ | Webflow platform |
+| **Satisfaction** | 95% | Production systems |
+| **Efficiency** | 35% | Code review time reduction |
+| **Memory** | 6GB | Multi-domain training |
 
 </div>
 
 ---
 
-## 📞 Let's Connect
+## Contact
 
 <div align="center">
 
@@ -272,7 +272,7 @@ achievements = {
 [![GitHub](https://img.shields.io/badge/GitHub-vivekprojects--GIT-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vivekprojects-GIT)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sai%20Vivek-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/saivivek)
 
-### 🚀 Ready to build something amazing together?
+### Ready to build something amazing together?
 
 ```python
 def collaborate():
@@ -284,6 +284,6 @@ def collaborate():
 
 ---
 
-*Building the future with Generative AI engineering* 🚀
+*Building the future with Generative AI engineering*
 
 </div>
