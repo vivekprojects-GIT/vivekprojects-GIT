@@ -156,7 +156,7 @@ The portfolio showcases real-world impact through quantified results:
 - **1.85x MLX speedup** on Apple Silicon optimization
 - **6GB memory usage** for efficient multi-domain LLM training
 - **15-30s training time** for rapid model fine-tuning
-- **5+ years experience** in AI/ML and production deployments
+- **Extensive experience** in AI/ML and production deployments
 
 ## 🔧 Customization
 
