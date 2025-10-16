@@ -1835,18 +1835,18 @@ section {
 }
 
 /* Live Demos Section */
-.demos {
+.projects {
     padding: 80px 0;
     background: var(--bg-secondary);
 }
 
-.demos-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2rem;
 }
 
-.demo-card {
+.project-card {
     background: var(--bg-primary);
     border-radius: 16px;
     padding: 2rem;
@@ -1854,26 +1854,26 @@ section {
     transition: all 0.3s ease;
 }
 
-.demo-card:hover {
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-xl);
     border-color: var(--primary-color);
 }
 
-.demo-header {
+.project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
 }
 
-.demo-header h3 {
+.project-header h3 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-primary);
 }
 
-.demo-status {
+.project-status {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -1881,43 +1881,43 @@ section {
     text-transform: uppercase;
 }
 
-.demo-status.live {
-    background: #10b981;
+.project-status {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
     color: white;
 }
 
-.demo-description {
+.project-description {
     margin-bottom: 2rem;
 }
 
-.demo-description p {
+.project-description p {
     color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
-.demo-metrics {
+.project-metrics {
     display: flex;
     gap: 2rem;
 }
 
-.demo-metrics .metric {
+.project-metrics .metric {
     text-align: center;
 }
 
-.demo-metrics .metric-value {
+.project-metrics .metric-value {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
 }
 
-.demo-metrics .metric-label {
+.project-metrics .metric-label {
     font-size: 0.8rem;
     color: var(--text-secondary);
 }
 
-.demo-actions {
+.project-actions {
     display: flex;
     gap: 1rem;
 }
@@ -2091,7 +2091,7 @@ section {
         justify-content: center;
     }
     
-    .demos-grid {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
     
