@@ -23,19 +23,16 @@
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#demos" class="nav-link">Live Demos</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#thought-leadership" class="nav-link">Thought Leadership</a>
+                    <a href="#technical-essays" class="nav-link">Technical Essays</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -56,86 +53,133 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Particle Background -->
-        <div class="particles-container">
-            <canvas id="particles-canvas"></canvas>
-        </div>
-        
-        <!-- Floating Tech Icons -->
-        <div class="floating-icons">
-            <div class="floating-icon" data-icon="AI">AI</div>
-            <div class="floating-icon" data-icon="ML">ML</div>
-            <div class="floating-icon" data-icon="LLM">LLM</div>
-            <div class="floating-icon" data-icon="RAG">RAG</div>
-            <div class="floating-icon" data-icon="API">API</div>
-            <div class="floating-icon" data-icon="GPU">GPU</div>
-        </div>
-
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="typing-animation" data-text="Building the Future with">Building the Future with</span>
-                    <br>
-                    <span class="gradient-text glitch-text" data-text="Generative AI">Generative AI</span>
-                </h1>
-                <p class="hero-description fade-in-up">
-                    Specialized in LLM Fine-Tuning, RAG Systems, and Agentic Architecture Design. 
-                    I architect intelligent systems that solve real-world problems through advanced AI technologies.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat stat-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="stat-icon">Accuracy</div>
-                        <span class="stat-number counter" data-target="98">0</span>
-                        <span class="stat-label">Multi-Domain Accuracy</span>
+                <div class="hero-header">
+                    <h1 class="hero-title">
+                        <span class="hero-name">Sai Vivek</span>
+                        <span class="hero-role">Generative AI Engineer</span>
+                    </h1>
+                    <p class="hero-tagline">
+                        Building production-ready AI systems with measurable business impact
+                    </p>
+                </div>
+                
+                <div class="hero-metrics">
+                    <div class="metric-highlight">
+                        <div class="metric-value">30 Lakhs</div>
+                        <div class="metric-label">Annual Cost Savings</div>
+                        <div class="metric-context">QLoRA Optimization at Accenture</div>
                     </div>
-                    <div class="stat stat-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="stat-icon">Performance</div>
-                        <span class="stat-number counter" data-target="1.85">0</span>
-                        <span class="stat-label">MLX Performance Boost</span>
+                    <div class="metric-highlight">
+                        <div class="metric-value">98%</div>
+                        <div class="metric-label">Multi-Domain Accuracy</div>
+                        <div class="metric-context">LoRA Fine-Tuning with Limited Data</div>
                     </div>
-                    <div class="stat stat-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-icon">Memory</div>
-                        <span class="stat-number counter" data-target="6">0</span>
-                        <span class="stat-label">Memory Efficiency</span>
+                    <div class="metric-highlight">
+                        <div class="metric-value">1.85x</div>
+                        <div class="metric-label">Performance Boost</div>
+                        <div class="metric-context">Apple Silicon MLX Optimization</div>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary btn-glow">
-                        <span>View My Work</span>
-                        <div class="btn-bg"></div>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary btn-hover-effect">
-                        <span>Get In Touch</span>
-                    </a>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Live Demos</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="ai-visualization">
-                    <div class="neural-network">
-                        <div class="node pulse-node"></div>
-                        <div class="node pulse-node" style="animation-delay: 0.5s;"></div>
-                        <div class="node pulse-node" style="animation-delay: 1s;"></div>
-                        <div class="node pulse-node" style="animation-delay: 1.5s;"></div>
-                        <div class="node pulse-node" style="animation-delay: 2s;"></div>
-                        <div class="connection animated-connection"></div>
-                        <div class="connection animated-connection" style="animation-delay: 0.5s;"></div>
-                        <div class="connection animated-connection" style="animation-delay: 1s;"></div>
-                        <div class="connection animated-connection" style="animation-delay: 1.5s;"></div>
+            
+            <div class="hero-technical">
+                <div class="tech-stack">
+                    <h3>Core Technologies</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <span class="tech-name">LangGraph</span>
+                            <span class="tech-usage">Multi-Agent Systems</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">QLoRA</span>
+                            <span class="tech-usage">LLM Fine-Tuning</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">CrewAI</span>
+                            <span class="tech-usage">Agent Orchestration</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Pinecone</span>
+                            <span class="tech-usage">Vector Search</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">FastAPI</span>
+                            <span class="tech-usage">Production APIs</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Neo4j</span>
+                            <span class="tech-usage">Knowledge Graphs</span>
+                        </div>
                     </div>
-                    <!-- Holographic Effect -->
-                    <div class="holographic-overlay"></div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="scroll-arrow">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Live Demos Section -->
+    <section id="demos" class="demos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live Interactive Demos</h2>
+                <p class="section-subtitle">Working AI systems with real-time interaction</p>
             </div>
-            <p>Scroll to explore</p>
+            
+            <div class="demos-grid">
+                <div class="demo-card">
+                    <div class="demo-header">
+                        <h3>AI Coding Support Bot</h3>
+                        <span class="demo-status live">Live</span>
+                    </div>
+                    <div class="demo-description">
+                        <p>Multi-agent conversational AI system built with LangGraph for intelligent coding assistance. Features safety filtering and context-aware responses.</p>
+                        <div class="demo-metrics">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Satisfaction Rate</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Multi-Agent</span>
+                                <span class="metric-label">Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-actions">
+                        <a href="https://github.com/vivekprojects-GIT/AgenticAI/tree/main/coding_support_bot" target="_blank" class="btn btn-outline">View Code</a>
+                        <a href="demos/coding_support_demo.html" class="btn btn-primary">Try Demo</a>
+                    </div>
+                </div>
+
+                <div class="demo-card">
+                    <div class="demo-header">
+                        <h3>AI Code Review API</h3>
+                        <span class="demo-status live">Live</span>
+                    </div>
+                    <div class="demo-description">
+                        <p>FastAPI-powered code analysis system that identifies security vulnerabilities, performance issues, and code quality metrics in real-time.</p>
+                        <div class="demo-metrics">
+                            <div class="metric">
+                                <span class="metric-value">12</span>
+                                <span class="metric-label">Vulnerability Types</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">FastAPI</span>
+                                <span class="metric-label">Production Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-actions">
+                        <a href="https://github.com/vivekprojects-GIT/AgenticAI/tree/main/code_review_service" target="_blank" class="btn btn-outline">View Code</a>
+                        <a href="demos/code_review_demo.html" class="btn btn-primary">Try Demo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -720,6 +764,101 @@
                         Features context-aware responses, safety filtering, and production deployment strategies.
                     </p>
                     <a href="https://github.com/vivekprojects-GIT/AgenticAI" target="_blank" class="blog-link">View Code <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Essays Section -->
+    <section id="technical-essays" class="technical-essays">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Essays</h2>
+                <p class="section-subtitle">Deep dives into AI architecture and implementation decisions</p>
+            </div>
+            
+            <div class="essays-grid">
+                <article class="essay-card">
+                    <div class="essay-header">
+                        <h3>A Deep Dive into QLoRA for Enterprise LLM Deployment</h3>
+                        <span class="essay-category">LLM Optimization</span>
+                    </div>
+                    <div class="essay-content">
+                        <p class="essay-excerpt">
+                            Comprehensive analysis of QLoRA implementation for 65B parameter models, covering memory optimization strategies, 
+                            training efficiency improvements, and production deployment considerations. Based on real-world experience 
+                            achieving 40% memory reduction and 2.5x training speedup.
+                        </p>
+                        <div class="essay-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Memory Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2.5x</span>
+                                <span class="metric-label">Training Speedup</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="essay-actions">
+                        <a href="essays/qlora-enterprise-deployment.html" class="btn btn-outline">Read Essay</a>
+                        <a href="https://github.com/vivekprojects-GIT/QLoRA-Optimization" target="_blank" class="btn btn-primary">View Code</a>
+                    </div>
+                </article>
+
+                <article class="essay-card">
+                    <div class="essay-header">
+                        <h3>Designing Safety Guardrails with LangGraph Nodes</h3>
+                        <span class="essay-category">Agentic AI</span>
+                    </div>
+                    <div class="essay-content">
+                        <p class="essay-excerpt">
+                            Architectural patterns for implementing robust safety mechanisms in multi-agent systems using LangGraph's 
+                            state management capabilities. Covers content filtering, context validation, and error handling strategies 
+                            for production AI applications.
+                        </p>
+                        <div class="essay-metrics">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Safety Compliance</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Multi-Node</span>
+                                <span class="metric-label">Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="essay-actions">
+                        <a href="essays/langgraph-safety-guardrails.html" class="btn btn-outline">Read Essay</a>
+                        <a href="https://github.com/vivekprojects-GIT/AgenticAI" target="_blank" class="btn btn-primary">View Code</a>
+                    </div>
+                </article>
+
+                <article class="essay-card">
+                    <div class="essay-header">
+                        <h3>Vector Search Optimization for RAG Systems</h3>
+                        <span class="essay-category">RAG Architecture</span>
+                    </div>
+                    <div class="essay-content">
+                        <p class="essay-excerpt">
+                            Performance optimization strategies for vector databases in production RAG systems. Covers embedding model 
+                            selection, index optimization, and query performance tuning for large-scale knowledge retrieval applications.
+                        </p>
+                        <div class="essay-metrics">
+                            <div class="metric">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label">Retrieval Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Sub-100ms</span>
+                                <span class="metric-label">Query Response</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="essay-actions">
+                        <a href="essays/vector-search-optimization.html" class="btn btn-outline">Read Essay</a>
+                        <a href="https://github.com/vivekprojects-GIT/Retrieval-Augmented-Generation" target="_blank" class="btn btn-primary">View Code</a>
+                    </div>
                 </article>
             </div>
         </div>

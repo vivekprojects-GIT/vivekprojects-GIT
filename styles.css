@@ -1639,6 +1639,321 @@ section {
                  0 0 20px var(--primary-color);
 }
 
+/* ========================================
+   PROFESSIONAL PORTFOLIO STYLES
+======================================== */
+
+/* Hero Section - Professional Design */
+.hero {
+    padding: 120px 0 80px;
+    background: var(--bg-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-header {
+    margin-bottom: 3rem;
+}
+
+.hero-name {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero-role {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.hero-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.metric-highlight {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.metric-highlight:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.metric-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.metric-context {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-technical {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.tech-stack h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.tech-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.tech-usage {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Live Demos Section */
+.demos {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.demos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.demo-card {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.demo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.demo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.demo-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.demo-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.demo-status.live {
+    background: #10b981;
+    color: white;
+}
+
+.demo-description {
+    margin-bottom: 2rem;
+}
+
+.demo-description p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.demo-metrics {
+    display: flex;
+    gap: 2rem;
+}
+
+.demo-metrics .metric {
+    text-align: center;
+}
+
+.demo-metrics .metric-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.demo-metrics .metric-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.demo-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Technical Essays Section */
+.technical-essays {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.essays-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.essay-card {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.essay-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.essay-header {
+    margin-bottom: 1.5rem;
+}
+
+.essay-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.essay-category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.essay-content {
+    margin-bottom: 2rem;
+}
+
+.essay-excerpt {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.essay-metrics {
+    display: flex;
+    gap: 2rem;
+}
+
+.essay-metrics .metric {
+    text-align: center;
+}
+
+.essay-metrics .metric-value {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.essay-metrics .metric-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.essay-actions {
+    display: flex;
+    gap: 1rem;
+}
+
 /* Responsive Adjustments for Futuristic Elements */
 @media (max-width: 768px) {
     .floating-icon {
@@ -1662,5 +1977,37 @@ section {
     
     .scroll-indicator {
         bottom: 1rem;
+    }
+    
+    /* Professional Portfolio Responsive */
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .demos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .essays-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-role {
+        font-size: 1.2rem;
     }
 }
